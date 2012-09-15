@@ -1,10 +1,10 @@
-//
-//  main.c
-//  lame-obj-c
-//
-//  Created by Daniel Drzimotta on 2012-09-05.
-//  Copyright (c) 2012 Daniel Drzimotta. All rights reserved.
-//
+/**
+ *  main.c
+ *  lame-obj-c
+ *
+ *  Created by Daniel Drzimotta on 2012-09-05.
+ *  Copyright (c) 2012 Daniel Drzimotta. All rights reserved.
+ */
 
 #include <stdio.h>
 
@@ -118,7 +118,7 @@ void AutoReleaseTest2() {
 void AutoReleaseTest3() {
     printf("Starting AutoRelease Test 3\n");
     
-    // Lets thrash our autorelease pool here...
+    /* Lets thrash our autorelease pool here... */
     AutoReleasePoolCreate();
     
     int numberOfOuterCons = 99;

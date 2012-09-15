@@ -1,10 +1,10 @@
-//
-//  lame-obj-c.c
-//  lame-obj-c
-//
-//  Created by Daniel Drzimotta on 2012-09-05.
-//  Copyright (c) 2012 Daniel Drzimotta. All rights reserved.
-//
+/**
+ *  lame-obj-c.c
+ *  lame-obj-c
+ *
+ *  Created by Daniel Drzimotta on 2012-09-05.
+ *  Copyright (c) 2012 Daniel Drzimotta. All rights reserved.
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -461,7 +461,7 @@ StringRef _CharDescription (Object obj) {
 }
 
 void _CharDealloc(Object obj) {
-    // Nothing to do...
+    /* Nothing to do... */
 }
 
 CharRef CharCreate(char character) {

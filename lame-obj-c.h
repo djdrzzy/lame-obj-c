@@ -1,10 +1,10 @@
-//
-//  lame-obj-c.h
-//  lame-obj-c
-//
-//  Created by Daniel Drzimotta on 2012-09-05.
-//  Copyright (c) 2012 Daniel Drzimotta. All rights reserved.
-//
+/**
+ *  lame-obj-c.h
+ *  lame-obj-c
+ *
+ *  Created by Daniel Drzimotta on 2012-09-05.
+ *  Copyright (c) 2012 Daniel Drzimotta. All rights reserved.
+ */
 
 #pragma mark Base Object System
 
@@ -62,21 +62,21 @@ unsigned int numberOfLeakedCons();
 CharRef CharCreate(char character);
 char CharCChar(CharRef character);
 
-// It will stop copying the string over if '\0' is found.
+/* It will stop copying the string over if '\0' is found. */
 StringRef StringCreate(char *string);
-// You are responsible for freeing the return val
+/* You are responsible for freeing the return val */
 char * StringCString(StringRef string);
 
 unsigned int StringLength(StringRef string);
 BOOL StringEqual(StringRef stringZero, StringRef stringOne);
 
-// Returns a new string with the 2 strings concatenated together.
+/* Returns a new string with the 2 strings concatenated together. */
 StringRef StringConcatenate(StringRef string, StringRef stringToAdd);
 
 
-// Expects a format string with 1 "%s" in it for where the Description of the object should print
+/* Expects a format string with 1 "%s" in it for where the Description of the object should print */
 void StringPrint(Object obj, const char *format);
 
-// Same as above but returns a string rather than printing it
+/* Same as above but returns a string rather than printing it */
 StringRef StringSPrint(Object obj, const char *format);
 
